@@ -1,0 +1,64 @@
+.squares
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.square
+{
+    width: 45px;
+    height: 45px;
+    background-color: #ACACAC;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.squares .last
+{
+    color: #ACACAC !important;
+    background-color: white !important;
+    border: 1px solid #ACACAC;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: bold;
+}
+.resend-verify-btn,
+.submit-verify-btn
+{
+    width: 80%;
+    color: black;
+    background-color: #1EE3CF;
+    padding: 8px;
+    border-radius: 14px;
+    border: none;
+    font-weight: 800;
+    transition: 0.3s !important;
+}
+.resend-verify-btn
+{
+    background-color:#FFFFFF;
+    border: #ACACAC solid 1px;
+    /* width: 90% !important; */
+}
+.resend-msg
+{
+    margin: 40px 0 20px 0;
+}
+.account-user-name,
+.gmail-account
+{
+    color: #6B48FF;
+}
+.timer-title,
+.timer
+{
+    color:   #348ff0;
+
+}

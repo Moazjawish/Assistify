@@ -1,0 +1,162 @@
+.sign-up-fields
+{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.sing-up-content h1
+{
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.sign-up-right-inputs
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 20px;
+} 
+
+.sign-up-right-inputs input
+{
+    width: 70%;
+    max-width: 100%;
+    position: relative;
+    margin: 10px 0;
+    border-radius: 14px;
+    padding: 8px;
+    border: 1px solid #000000;
+}
+
+.sign-up-right-inputs input:focus
+{
+    outline: none;
+}
+
+.sign-up-right-inputs p
+{
+    position: absolute;
+    right: 131px;
+    font-size: 12px;
+    background-color: white;
+    z-index: 1;
+    font-weight: 600;
+    padding: 0px 10px;
+    max-width: 100%;
+
+}
+
+.sign-up-left-side .upload-images img
+{
+    width: 366px;
+    margin: 12px auto;
+}
+
+.sign-up-left-side
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}   
+
+.sing-up-overlay
+{
+    background: url('sign-up.png') no-repeat;
+    position: relative;
+    height: 45vw;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+}
+
+.sing-up-content
+{
+    position: absolute;
+    width: 80%;
+    left: 20%;
+    background-color: white;
+    height: 45vw;
+    text-align: center;
+    border-radius: 15px;
+}
+.create-account
+{
+    display: flex;
+    gap: 7px;
+    font-size: 12px;
+}
+.create-account-btn
+{
+    text-decoration: underline;
+    color: #6B48FF;
+    cursor: pointer;
+}
+
+
+.sign-up-btn
+{
+    width: 67%;
+    color: black;
+    background-color: #1EE3CF;
+    padding: 8px;
+    border-radius: 14px;
+    border: none;
+    font-weight: 800;
+    transition: 0.3s !important;
+}
+.sign-up-btn:hover
+{
+    transform: translateY(-4px);
+}
+.sign-up-line
+{
+    width: 373px;
+    height: 1px;
+    margin: 20px 0;
+    background-color: #D9D9D9;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sign-up-line p 
+{
+    position: absolute;
+    color: #ACACAC;
+    left: 39%;
+    background-color: white;
+    top: -14px;
+    padding: 0 38px;
+}
+.sign-up-options
+{
+    display: flex !important;
+    width: 72%;
+    justify-content: end;
+}
+.social-sign-up-buttons img
+{
+    width: 206px;
+    height: 163px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:468px) {
+    .social-sign-up-buttons img
+    {
+        width: 183px;
+        height: 138px;
+    }
+}
+@media (max-width:853px) {
+
+        .modal-content {
+            left: 0;
+        }
+        .modal.show .modal-dialog
+        {
+            right: 0;
+        }
+}

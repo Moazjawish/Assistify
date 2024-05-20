@@ -1,0 +1,176 @@
+.modal
+{
+    left: -160px !important;
+    
+}
+
+.form-fields
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-fields input
+{
+    width: 90%;
+    position: relative;
+    margin: 10px 0;
+    border-radius: 14px;
+    padding: 8px;
+    border: 1px solid #000000;
+}
+.form-fields input:focus
+{
+    outline: none;
+}
+
+.form-fields p
+{
+    position: absolute;
+    right: 69px;
+    font-size: 12px;
+    background-color: white;
+    z-index: 1;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+.modal-title h1
+{
+    width: 521px;
+    font-size: 28px;
+    color: #0A0E3F;
+    font-weight: bold;
+}
+
+.logout-verify-btn,
+.login-popup-btn
+{
+    width: 90%;
+    color: black;
+    background-color: #1EE3CF;
+    padding: 8px;
+    border-radius: 14px;
+    border: none;
+    font-weight: 800;
+    transition: 0.3s !important;
+}
+
+.logout-verify-btn
+{
+    background-color:#FFFFFF;
+    border: #ACACAC solid 1px;
+    width: 90% !important;
+}
+
+.login-popup-btn:hover
+{
+    transform: translateY(-4px);
+}
+
+.login-options p
+{
+    font-size: 14px;
+    cursor: pointer;
+}
+.login-options .password p
+{
+    text-decoration: underline;
+    color: #161D6F;
+}
+.create-account-btn
+{
+    text-decoration: underline;
+    color: #6B48FF;
+}
+
+.log-out-modal
+{
+    top: 20% !important;
+}
+
+.line
+{
+    width: 373px;
+    height: 1px;
+    background-color: #D9D9D9;
+    position: relative;
+}
+.line p 
+{
+    position: absolute;
+    color: #ACACAC;
+    left: 39%;
+    background-color: white;
+    top: -14px;
+    padding: 0 38px;
+}
+.login-options
+{
+    display: flex !important;
+    gap: 30px;
+    justify-content: space-around;
+    width: 100%;
+}
+.social-login-buttons
+{
+    display: flex;
+    gap: 10px;
+}
+.social-login-buttons img
+{
+    width: 206px;
+    height: 163px;
+    flex-wrap: wrap;
+}
+
+.modal-header
+{
+justify-content: center !important;
+border: none !important;
+}
+.modal .container
+{
+    align-items: center !important;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modal.show .modal-dialog
+{
+    background: url('login-background.png');
+    /* right: 10%; */
+    border-radius: 10px;
+    box-shadow: white 0px 3px 8px;
+
+}
+.modal-content
+{
+    left: 40%;
+    text-align: center;
+}
+.modal-backdrop
+{
+    background-image: url('overlay.png');
+}
+
+@media (max-width:468px) {
+    .social-login-buttons img
+    {
+        width: 183px;
+        height: 138px;
+    }
+}
+@media (max-width:853px) {
+
+        .modal-content {
+            left: 0;
+        }
+        .modal.show .modal-dialog
+        {
+            right: 0;
+        }
+}

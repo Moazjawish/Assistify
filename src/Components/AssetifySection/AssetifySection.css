@@ -1,0 +1,63 @@
+.Assetify-section
+{
+    background-color: #0A0E3F;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+.Assetify-text
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    max-width: 100%;
+    width: 748px;
+    text-align: center;
+}
+.Assetify-text h3
+{
+color: #FFFF;
+}
+.Assetify-text p
+{
+    color: #1EE3CF;
+}
+
+
+@media (max-width : 1050px)
+{
+    .Assetify-text
+    {
+        max-width: 60%;
+    }
+}
+
+@media (max-width : 750px)
+{
+    .Assetify-text
+    {
+        max-width: 80%;
+        font-size: 11px;
+    }
+    .Assetify-text h3
+    {
+        font-size: 15px;
+    }
+}
+@media (max-width : 500px)
+{
+    .Assetify-text
+    {
+        max-width: 80%;
+        font-size: 10px;
+        gap: 4px;
+    }
+    .Assetify-text h3
+    {
+        font-size: 10px;
+    }
+}

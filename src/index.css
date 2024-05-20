@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Noor";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+  url("./Fonts/AGCRegular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Noor;
+    scroll-behavior: smooth;
+}
