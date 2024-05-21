@@ -3,6 +3,8 @@ import './SignUp.css'
 import { assets } from '../../assets/assets'
 import { Row , Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { FaFacebook  , FaApple} from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 const SignUp = ({ setVerifyShow , setShow}) => {
 return (
         <div className="sing-up-overlay">
@@ -16,13 +18,11 @@ return (
                 <img src={assets.upload_first_img} alt="" />
                 <img src={assets.upload_second_img} alt="" />
             </div>
-            <Link to='/'>
-              <button  className='sign-up-btn' onClick={()=>{setVerifyShow(true)}} >انشاء الحساب</button>
-            </Link>
+              <button className='sign-up-btn' onClick={()=>{setVerifyShow(true)}} >انشاء الحساب</button>
         <div className="sign-up-options">
             <div className="create-account">
               <Link to='/'>
-                <span onClick={()=>{setShow(false)}} className='create-account-btn'>تسجيل الدخول</span>
+                <span onClick={()=>{setShow(true)}} className='create-account-btn'>تسجيل الدخول</span>
               </Link>
                 <p>ليس لديك حساب ؟</p>
             </div>
@@ -68,13 +68,19 @@ return (
         
     </Row>
     <div className="sign-up-line">
-        <p>أو</p>
+        <p className='or-line'>أو</p>
     </div>
-        <div className="social-sign-up-buttons">
-            <img src={assets.face_icon} alt="" />
-            <img src={assets.apple_icon} alt="" />
-            <img src={assets.apple_icon} alt="" />
-        </div>
+                    <Row className='social-sign-up-buttons'>
+              <Col xs={3} md={3}>
+              <button className="apple-social-btn"> <FaApple/>  </button>
+                </Col>
+              <Col xs={3} md={3}>
+              <button className="google-social-btn "> <FcGoogle/> </button>
+                </Col>
+                <Col xs={3} md={3}>
+              <button className="facaebook-social-btn"> <FaFacebook/>  </button>
+                </Col>
+            </Row>
     </div>
     </div>
 )}

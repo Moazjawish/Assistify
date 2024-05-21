@@ -27,10 +27,10 @@ const LogoutPopup = ({ setShow  , show, setAccountbtn  }) => {
         <Container>
             <div className="form-fields">
             <Col xs={12} md={12}>
-            <button onClick={closeSignUp} className='login-popup-btn'>تأكيد</button>
+            <button onClick={closeSignUp} className='form-btn  submit-btn'>تأكيد</button>
             </Col>
             <Col xs={12} md={12}>
-            <button onClick={signUpBtn} className='logout-verify-btn'>تراجع</button>
+            <button onClick={signUpBtn} className='form-btn cancel-btn'>تراجع</button>
             </Col>
           </div>
         </Container>

@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
-import { assets } from '../../assets/assets'
 import './LoginPopup.css'
-import { Modal , Button ,  Form , Col  , Container , Row} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+import { Modal , Col  , Container , Row } from 'react-bootstrap'
+import { FaFacebook  , FaApple} from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 const LoginPopup = ({ show ,setAccountbtn  , setShow }) => {
 
   const signUpBtn = ()=>{
@@ -12,55 +12,6 @@ const LoginPopup = ({ show ,setAccountbtn  , setShow }) => {
     setShow(false)
   }
 
-//   <Form.Group as={Col} md="4" controlId="validationCustom01">
-//   <Form.Label>First name</Form.Label>
-//   <Form.Control
-//     required
-//     type="text"
-//     placeholder="First name"
-//     defaultValue="Mark"
-//   />
-//   <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-// </Form.Group>
-
-
-// return (
-
-    //      <div className="login-overlay">
-    //  <div className="login_background">
-    //  <div className='login-popup'>
-    //      <button onClick={()=>{setShowlogin(false)}}>x</button>
-    //  <h1>تسجيل الدخول</h1>
-    //  <div className="login-popup-fields">
-
-    //      <div className="form-fields">
-    //      <p>الايميل أو رقم الهاتف</p>
-    //      <input type="text" required />
-    //      <p>كلمة المرور</p>
-    //      <input type="text" required />
-    //      </div>
-
-    //      <button className='login-popup-btn'>تسجيل الدخول</button>
-    //      <div className="login-options">
-    //          <div className="create-account">
-    //              <p>ليس لديك حساب ؟</p>
-    //              <p className='create-account-btn'>إنشاء حساب</p>
-    //          </div>
-    //          <div className="password">
-    //          <p>نسيت كلمة المرور</p>
-    //          </div>
-    //      </div>
-    //      <p>أو</p>
-    //      <div className="social-login-buttons">
-    //          <img src={assets.face_icon} alt="" />
-    //          <img src={assets.apple_icon} alt="" />
-    //          <img src={assets.google_icon} alt="" />
-    //      </div>
-    //  </div>
-    //  </div>
-    //  </div>
-    //  </div>
-    // <>
     return(
  <> <Modal
       show={show} 
@@ -73,12 +24,12 @@ const LoginPopup = ({ show ,setAccountbtn  , setShow }) => {
       </Modal.Header>
       <Modal.Body className="grid-example">
         <Container>
-            <div className="form-fields">
+            <div className="form-fields">                
           <Row>
             <Col xs={12} md={12}>
             <p>الايميل أو رقم الهاتف</p>
           <input type="text" required />
-            </Col>
+              </Col> 
           </Row>
 
           <Row>
@@ -88,7 +39,7 @@ const LoginPopup = ({ show ,setAccountbtn  , setShow }) => {
           </Col>
           </Row>
             <Col xs={12} md={12}>
-            <button onClick={signUpBtn} className='login-popup-btn'>تسجيل الدخول</button>
+            <button onClick={signUpBtn} type="submit" className='form-btn  submit-btn'>تسجيل الدخول</button>
             </Col>
           </div>
 
@@ -99,7 +50,7 @@ const LoginPopup = ({ show ,setAccountbtn  , setShow }) => {
             <Col xs={6} md={6} className="create-account">
               <p>ليس لديك حساب؟
               <Link to='/sign-up'>
-              <span onClick={()=>{setShow(false)}} className='create-account-btn'>إنشاء حساب</span>  
+              <span onClick={()=>{setShow(false)}} className='create-account-btn '>إنشاء حساب</span>  
               </Link>
                 </p>
             </Col>
@@ -107,14 +58,20 @@ const LoginPopup = ({ show ,setAccountbtn  , setShow }) => {
             <Row>
               <Col>
               <div className="line">
-                <p>أو</p>
+                <p className='or-line'>أو</p>
               </div>
               </Col>
             </Row>
             <Row className='social-login-buttons'>
-              <Col xs={3} md={3}><img src={assets.face_icon} alt="" /></Col>
-              <Col xs={3} md={3}><img src={assets.face_icon} alt="" /></Col>
-              <Col xs={3} md={3}><img src={assets.apple_icon} alt="" /></Col>
+              <Col xs={12} md={3}>
+              <button className="apple-social-btn"> <FaApple/>  </button>
+                </Col>
+              <Col xs={12} md={3}>
+              <button className="google-social-btn "> <FcGoogle/> </button>
+                </Col>
+                <Col xs={12} md={3}>
+              <button className="facaebook-social-btn"> <FaFacebook/>  </button>
+                </Col>
             </Row>
         </Container>
       </Modal.Body>

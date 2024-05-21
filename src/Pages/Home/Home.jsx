@@ -5,7 +5,7 @@ import Header from '../../Components/Header/Header'
 import './Home.css'
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <Header/>
       <AssetifySection/>
     </div>

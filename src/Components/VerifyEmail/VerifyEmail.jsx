@@ -4,8 +4,8 @@ import { Modal} from 'react-bootstrap'
 const VerifyEmail = ({setVerifyShow , VerifyShow}) => {
 return (
     <div>
-    <Modal show={VerifyShow} onHide={()=>{setVerifyShow(false)}}>
-        <Modal.Header >
+    <Modal show={VerifyShow} onHide={()=>{setVerifyShow(false)}} className='verify-modal' >
+        <Modal.Header  >
         <Modal.Title>
         <h1> <span className='account-user-name'>RED</span> مرحبا بك </h1>
         </Modal.Title>

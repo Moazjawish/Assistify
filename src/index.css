@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Noor";   /*Can be any text*/
+  font-family: "Noor";   
   src: local("AirbnbCerealLight"),
   url("./Fonts/AGCRegular.ttf") format("truetype");
 }
@@ -7,7 +7,16 @@
 body {
   margin: 0;
   min-height: 100vh;
+  /* overflow: hidden; */
+  overflow-x: hidden;
 }
+
+.app
+{
+    margin: auto;
+    width: 100%;
+}
+
 *
 {
     box-sizing: border-box;
@@ -15,4 +24,100 @@ body {
     margin: 0;
     font-family: Noor;
     scroll-behavior: smooth;
+}
+
+.modal-header
+{
+justify-content: center !important;
+border: none !important;
+}
+.modal .container
+{
+    align-items: center !important;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modal.show .modal-dialog
+{
+    background: url('modal-back.jpg');
+    border-radius: 10px;
+    box-shadow: white 0px 3px 8px;
+
+}
+.modal-content
+{
+    left: 40%;
+    text-align: center;
+}
+.modal-backdrop
+{
+    background-image: url('overlay.png');
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+.submit-btn
+{
+  border: none;
+  color: black;
+  background-color: #1EE3CF;
+
+}
+
+.cancel-btn
+{
+  background-color:#FFFFFF;
+  border: #ACACAC solid 1px;
+
+}
+.form-btn
+{
+  width: 90% !important;
+  padding: 8px;
+  border-radius: 14px;
+  font-weight: 800;
+  transition: 0.3s !important;
+}
+.form-btn:hover,
+.submit-btn:hover,
+.cancel-btn:hover
+{
+    transform: translateY(-4px);
+}
+
+.or-line 
+{
+    position: absolute;
+    color: #ACACAC;
+    left: 39%;
+    background-color: white;
+    top: -14px;
+    padding: 0 38px;
+}
+.social-buttons img
+{
+  width: 206px;
+  height: 163px;
+  flex-wrap: wrap;
+}
+
+@media (max-width:468px) {
+  .social-login-buttons img
+  {
+      width: 183px;
+      height: 138px;
+  }
+}
+@media (max-width:853px) {
+
+      .modal-content {
+          left: 0;
+      }
+      .modal.show .modal-dialog
+      {
+          right: 0;
+      }
 }

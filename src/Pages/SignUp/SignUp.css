@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     text-align: center;
+    flex-wrap: wrap-reverse !important;
 }
 .sing-up-content h1
 {
@@ -47,11 +48,16 @@
     max-width: 100%;
 
 }
+.sign-up-left-side .upload-images
+{
+    margin: 0 10px;
+}
 
 .sign-up-left-side .upload-images img
 {
     width: 366px;
     margin: 12px auto;
+    max-width: 100%;
 }
 
 .sign-up-left-side
@@ -64,12 +70,13 @@
 
 .sing-up-overlay
 {
-    background: url('sign-up.png') no-repeat;
+    background: url('sign-up.png') no-repeat ;
     position: relative;
-    height: 45vw;
-    text-align: center;
-    display: flex;
-    justify-content: start;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
 }
 
 .sing-up-content
@@ -78,9 +85,10 @@
     width: 80%;
     left: 20%;
     background-color: white;
-    height: 45vw;
+    min-height: 100%;
     text-align: center;
     border-radius: 15px;
+    overflow-x: hidden;
 }
 .create-account
 {
@@ -121,42 +129,36 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.sign-up-line p 
-{
-    position: absolute;
-    color: #ACACAC;
-    left: 39%;
-    background-color: white;
-    top: -14px;
-    padding: 0 38px;
-}
+
 .sign-up-options
 {
     display: flex !important;
     width: 72%;
     justify-content: end;
 }
-.social-sign-up-buttons img
+.social-sign-up-buttons
 {
-    width: 206px;
-    height: 163px;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+}
+.social-sign-up-buttons button
+{
+    width: 89px;
+    padding: 0px 2px 4px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 24px;
+    transition: 0.3s;
 }
 
-@media (max-width:468px) {
-    .social-sign-up-buttons img
+.social-sign-up-buttons button:hover
+{
+    transform: translateY(-4px);
+}
+@media (max-width : 760px)
+{
+    .sing-up-content
     {
-        width: 183px;
-        height: 138px;
+        height: 1000px;
     }
-}
-@media (max-width:853px) {
-
-        .modal-content {
-            left: 0;
-        }
-        .modal.show .modal-dialog
-        {
-            right: 0;
-        }
 }

@@ -1,17 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { Button } from 'react-bootstrap';
 import './NavBar.css'
+import {Container , Button ,Nav , Navbar} from 'react-bootstrap';
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 const NavBar = ({ accoutnbtn , setShow}) => {
   return (
     <>
-      
     <Navbar expand="lg" className=" navbar"  >
       <Container className='navbar-container'>
         <div className="navbar-logo">

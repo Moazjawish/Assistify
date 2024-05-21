@@ -45,7 +45,6 @@
 {
     background-color:#FFFFFF;
     border: #ACACAC solid 1px;
-    /* width: 90% !important; */
 }
 .resend-msg
 {
@@ -60,5 +59,8 @@
 .timer
 {
     color:   #348ff0;
-
+}
+.verify-modal
+{
+    height: 500px;
 }
