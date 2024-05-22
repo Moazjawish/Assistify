@@ -1,6 +1,6 @@
 .header
 {
-    background: url('Hero-backgound.svg') no-repeat;
+    background: url('../../../public//Hero-backgound.svg') no-repeat;
     background-size: cover;
     position: relative;
     height: 41vw;
